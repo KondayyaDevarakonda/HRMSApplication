@@ -1,19 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{83D433DD-4E25-4FB5-B8F6-3AEEE807216A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyApi", "src\CompanyApi\CompanyApi.csproj", "{7F90B4C0-6CC0-447B-A253-2911EA0BCDE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyApi", "src\CompanyApi\CompanyApi.csproj", "{7F90B4C0-6CC0-447B-A253-2911EA0BCDE4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{8F9704DE-5B83-44E0-8DDD-1D104E6BC370}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyApi.Test", "test\CompanyApi.Test\CompanyApi.Test.csproj", "{6D48B830-263B-4788-B76A-23BD749534D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyApi.Test", "test\CompanyApi.Test\CompanyApi.Test.csproj", "{6D48B830-263B-4788-B76A-23BD749534D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicantApi", "src\ApplicantApi\ApplicantApi.csproj", "{E08047D9-ED1F-4356-8E1D-D9A529F305F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicantApi", "src\ApplicantApi\ApplicantApi.csproj", "{E08047D9-ED1F-4356-8E1D-D9A529F305F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicantApi.Test", "test\ApplicantApi.Test\ApplicantApi.Test.csproj", "{C4D5D0DD-A6DA-459A-842A-34D9E23EDEFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicantApi.Test", "test\ApplicantApi.Test\ApplicantApi.Test.csproj", "{C4D5D0DD-A6DA-459A-842A-34D9E23EDEFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C3F2450D-14E2-4EA4-9A8F-1526EAB2AB5A}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHRMSApplicationMVC", "src\WebHRMSApplicationMVC\WebHRMSApplicationMVC.csproj", "{9475E3D8-AA81-4AEF-8136-26CE1373FA33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +30,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7F90B4C0-6CC0-447B-A253-2911EA0BCDE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -76,11 +80,30 @@ Global
 		{C4D5D0DD-A6DA-459A-842A-34D9E23EDEFE}.Release|x64.Build.0 = Release|Any CPU
 		{C4D5D0DD-A6DA-459A-842A-34D9E23EDEFE}.Release|x86.ActiveCfg = Release|Any CPU
 		{C4D5D0DD-A6DA-459A-842A-34D9E23EDEFE}.Release|x86.Build.0 = Release|Any CPU
+		{9475E3D8-AA81-4AEF-8136-26CE1373FA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9475E3D8-AA81-4AEF-8136-26CE1373FA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9475E3D8-AA81-4AEF-8136-26CE1373FA33}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9475E3D8-AA81-4AEF-8136-26CE1373FA33}.Debug|x64.Build.0 = Debug|Any CPU
+		{9475E3D8-AA81-4AEF-8136-26CE1373FA33}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9475E3D8-AA81-4AEF-8136-26CE1373FA33}.Debug|x86.Build.0 = Debug|Any CPU
+		{9475E3D8-AA81-4AEF-8136-26CE1373FA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9475E3D8-AA81-4AEF-8136-26CE1373FA33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9475E3D8-AA81-4AEF-8136-26CE1373FA33}.Release|x64.ActiveCfg = Release|Any CPU
+		{9475E3D8-AA81-4AEF-8136-26CE1373FA33}.Release|x64.Build.0 = Release|Any CPU
+		{9475E3D8-AA81-4AEF-8136-26CE1373FA33}.Release|x86.ActiveCfg = Release|Any CPU
+		{9475E3D8-AA81-4AEF-8136-26CE1373FA33}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7F90B4C0-6CC0-447B-A253-2911EA0BCDE4} = {83D433DD-4E25-4FB5-B8F6-3AEEE807216A}
 		{6D48B830-263B-4788-B76A-23BD749534D4} = {8F9704DE-5B83-44E0-8DDD-1D104E6BC370}
 		{E08047D9-ED1F-4356-8E1D-D9A529F305F4} = {83D433DD-4E25-4FB5-B8F6-3AEEE807216A}
 		{C4D5D0DD-A6DA-459A-842A-34D9E23EDEFE} = {8F9704DE-5B83-44E0-8DDD-1D104E6BC370}
+		{9475E3D8-AA81-4AEF-8136-26CE1373FA33} = {83D433DD-4E25-4FB5-B8F6-3AEEE807216A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {229A497A-511F-4A46-B585-3F26D75EB59E}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<WebHRMSApplicationMVC.Model.Company>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>GetAllProducts</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComanyCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComanyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td contenteditable="false">
+        @Html.DisplayFor(modelItem => item.CompanyId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ComanyCode)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ComanyName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Address)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.PostCode)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.IsActive)
+    </td>
+
+</tr>
+
+    }
+</table>

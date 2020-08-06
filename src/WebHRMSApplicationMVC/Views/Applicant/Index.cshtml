@@ -1,0 +1,67 @@
+﻿@model IEnumerable<WebHRMSApplicationMVC.Model.Applicant>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>GetAllApplicants</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicantId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicantCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td contenteditable="false">
+        @Html.DisplayFor(modelItem => item.ApplicantId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ApplicantCode)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FirstName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DateOfBirth)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Address)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.PostCode)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.IsActive)
+    </td>
+
+</tr>
+
+    }
+</table>
